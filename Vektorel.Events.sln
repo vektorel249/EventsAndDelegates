@@ -3,9 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35327.3
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vektorel.Events", "Vektorel.Events\Vektorel.Events.csproj", "{405E41C1-1F38-4F44-8F42-13D25CDEFB87}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vektorel.Events", "Vektorel.Events\Vektorel.Events.csproj", "{405E41C1-1F38-4F44-8F42-13D25CDEFB87}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vektorel.Family", "Vektorel.Family\Vektorel.Family.csproj", "{BDB28EBA-7CF2-4507-8CF4-EFE9D865E2D4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vektorel.Family", "Vektorel.Family\Vektorel.Family.csproj", "{BDB28EBA-7CF2-4507-8CF4-EFE9D865E2D4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vektorel.Events.Sample", "Vektorel.Events.Sample\Vektorel.Events.Sample.csproj", "{9BCFF8A5-A0B2-417D-B947-55C8636DDB1D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vektorel.Events.Biletix", "Vektorel.Events.Biletix\Vektorel.Events.Biletix.csproj", "{BAE66B1F-4514-48EE-8C29-5BB36AEB58A6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{BDB28EBA-7CF2-4507-8CF4-EFE9D865E2D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BDB28EBA-7CF2-4507-8CF4-EFE9D865E2D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BDB28EBA-7CF2-4507-8CF4-EFE9D865E2D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9BCFF8A5-A0B2-417D-B947-55C8636DDB1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BCFF8A5-A0B2-417D-B947-55C8636DDB1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BCFF8A5-A0B2-417D-B947-55C8636DDB1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BCFF8A5-A0B2-417D-B947-55C8636DDB1D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BAE66B1F-4514-48EE-8C29-5BB36AEB58A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BAE66B1F-4514-48EE-8C29-5BB36AEB58A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BAE66B1F-4514-48EE-8C29-5BB36AEB58A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BAE66B1F-4514-48EE-8C29-5BB36AEB58A6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
