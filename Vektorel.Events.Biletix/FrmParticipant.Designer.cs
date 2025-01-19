@@ -53,22 +53,24 @@
             btnAttend.TabIndex = 1;
             btnAttend.Text = "Katıl";
             btnAttend.UseVisualStyleBackColor = true;
+            btnAttend.Click += btnAttend_Click;
             // 
             // btnLeave
             // 
-            btnLeave.Location = new Point(192, 41);
+            btnLeave.Location = new Point(273, 12);
             btnLeave.Name = "btnLeave";
             btnLeave.Size = new Size(75, 23);
             btnLeave.TabIndex = 2;
             btnLeave.Text = "Ayrıl";
             btnLeave.UseVisualStyleBackColor = true;
+            btnLeave.Click += btnLeave_Click;
             // 
             // groupBox1
             // 
             groupBox1.Controls.Add(rtbNotifications);
-            groupBox1.Location = new Point(192, 70);
+            groupBox1.Location = new Point(192, 41);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(200, 156);
+            groupBox1.Size = new Size(342, 185);
             groupBox1.TabIndex = 3;
             groupBox1.TabStop = false;
             groupBox1.Text = "Bildirimler";
@@ -79,7 +81,7 @@
             rtbNotifications.Location = new Point(6, 22);
             rtbNotifications.Name = "rtbNotifications";
             rtbNotifications.ReadOnly = true;
-            rtbNotifications.Size = new Size(188, 128);
+            rtbNotifications.Size = new Size(330, 157);
             rtbNotifications.TabIndex = 0;
             rtbNotifications.Text = "";
             // 
@@ -87,7 +89,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(403, 238);
+            ClientSize = new Size(546, 238);
             Controls.Add(groupBox1);
             Controls.Add(btnLeave);
             Controls.Add(btnAttend);
@@ -97,6 +99,7 @@
             MinimizeBox = false;
             Name = "FrmParticipant";
             Text = "Etkinlik Katılımı";
+            Load += FrmParticipant_Load;
             groupBox1.ResumeLayout(false);
             ResumeLayout(false);
         }

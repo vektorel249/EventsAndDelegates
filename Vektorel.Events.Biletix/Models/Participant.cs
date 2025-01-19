@@ -1,6 +1,6 @@
 ﻿namespace Vektorel.Events.Biletix.Models;
 
-internal class Participant
+public class Participant
 {
     public Participant()
     {

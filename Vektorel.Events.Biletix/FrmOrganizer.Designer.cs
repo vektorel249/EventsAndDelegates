@@ -152,51 +152,63 @@
             // 
             // groupBox2
             // 
+            groupBox2.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             groupBox2.Controls.Add(dgvEvents);
             groupBox2.Location = new Point(194, 12);
             groupBox2.Name = "groupBox2";
-            groupBox2.Size = new Size(365, 221);
+            groupBox2.Size = new Size(398, 221);
             groupBox2.TabIndex = 1;
             groupBox2.TabStop = false;
             groupBox2.Text = "Etkinlik Listesi";
             // 
             // dgvEvents
             // 
+            dgvEvents.AllowUserToAddRows = false;
+            dgvEvents.AllowUserToDeleteRows = false;
+            dgvEvents.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             dgvEvents.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvEvents.Location = new Point(6, 22);
+            dgvEvents.MultiSelect = false;
             dgvEvents.Name = "dgvEvents";
-            dgvEvents.Size = new Size(353, 193);
+            dgvEvents.ReadOnly = true;
+            dgvEvents.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dgvEvents.Size = new Size(386, 193);
             dgvEvents.TabIndex = 0;
+            dgvEvents.CellClick += dgvEvents_CellContentClick;
             // 
             // groupBox3
             // 
+            groupBox3.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             groupBox3.Controls.Add(prbStatus);
             groupBox3.Location = new Point(194, 239);
             groupBox3.Name = "groupBox3";
-            groupBox3.Size = new Size(365, 42);
+            groupBox3.Size = new Size(398, 42);
             groupBox3.TabIndex = 2;
             groupBox3.TabStop = false;
             groupBox3.Text = "Katılım Durumu";
             // 
             // prbStatus
             // 
+            prbStatus.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             prbStatus.Location = new Point(6, 22);
             prbStatus.Name = "prbStatus";
-            prbStatus.Size = new Size(353, 14);
+            prbStatus.Size = new Size(386, 14);
             prbStatus.TabIndex = 0;
             // 
             // FrmOrganizer
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(571, 293);
+            ClientSize = new Size(604, 291);
             Controls.Add(groupBox3);
             Controls.Add(groupBox2);
             Controls.Add(groupBox1);
             MaximizeBox = false;
             MinimizeBox = false;
+            MinimumSize = new Size(620, 330);
             Name = "FrmOrganizer";
             Text = "Etkinlik Yönetimi";
+            Load += FrmOrganizer_Load;
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)nudLimit).EndInit();
